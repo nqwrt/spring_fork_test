@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController_jiseon {
+public class HomeController_jiseon{
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController_jiseon.class);
 	
@@ -32,7 +32,7 @@ public class HomeController_jiseon {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		
+		//dd
 		return "home";
 	}
 	
