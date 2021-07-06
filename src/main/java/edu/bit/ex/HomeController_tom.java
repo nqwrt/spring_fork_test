@@ -11,43 +11,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
-<<<<<<< HEAD
- * Handles requests for the application home page.
+/*
+ ·Î±×ÀÎ ±â´É ¿Ï¼º
  */
 @Controller
-public class HomeController_jh {
-
-	private static final Logger logger = LoggerFactory.getLogger(HomeController_jh.class);
-
-=======
- ë¡œê·¸ì¸ ê¸°ëŠ¥ì´ ì™„ì„±
- */
-@Controller
-public class HomeController_jh {
+public class HomeController_tom {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController_jh.class);
+	private static final Logger logger = LoggerFactory.getLogger(HomeController_tom.class);
 	
->>>>>>> upstream/master
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
-<<<<<<< HEAD
-
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-
-		String formattedDate = dateFormat.format(date);
-
-		model.addAttribute("serverTime", formattedDate);
-
-		return "home";
-	}
-
-=======
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -59,5 +36,4 @@ public class HomeController_jh {
 		return "home";
 	}
 	
->>>>>>> upstream/master
 }
