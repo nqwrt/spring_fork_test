@@ -1,14 +1,15 @@
+// 마스터
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
+
 <html>
 <head>
-	<title>Home</title>
+	<title>충돌예제</title>
 </head>
 <body>
 <h1>
-	Hello world!  
+	git test
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P>  </P>
 </body>
 </html>
